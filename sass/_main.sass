@@ -1,0 +1,78 @@
+.main
+  background: url('../img/main/main.png') no-repeat center
+  padding-top: 114px
+  padding-bottom: 74px
+  &-wrap
+    display: flex
+    justify-content: space-between
+.advantages
+  width: 520px
+  
+  &__title
+    margin: 0   
+    font-size: 44px
+    line-height: 60px
+    margin-bottom: 35px
+    color: #fffafa
+  &__subtitle
+    margin: 0
+    font-size: 20px
+    margin-bottom: 66px
+    color: #fffafa
+  &-item
+    display: flex
+    
+    &__text
+      font-size: 15px
+      color: #fff
+      margin-bottom: 27px
+      max-width: 206px
+    &__img
+      min-width: 35px
+      height: 35px 
+      border-radius: 50%
+      border: 1px solid rgba(255,255,255,0.3)
+      /* opacity: 0.2 */
+      margin-right: 25px
+     
+      background-position: center
+      background-repeat: no-repeat
+      &-1
+        background-image: url('../img/main/img-1.png')
+        background-size: 10px
+      &-2
+        background-image: url('../img/main/img-2.png')
+        background-size: 16px
+      &-3
+        background-image: url('../img/main/img-3.png')
+        background-size: 17px
+      &-4
+        background-image: url('../img/main/img-4.png')
+        background-size: 19px
+.form
+  border: 1px solid #ffffff
+  background-color: #ffffff
+  width: 370px
+  text-align: center 
+  margin: 0
+  display: flex
+  flex-direction: column
+  &__title
+    color: #000000
+    font-size: 18px
+    margin: 0
+    margin-top: 40px
+    margin-bottom: 28px
+  &__input
+    width: 260px
+    margin-bottom: 15px
+    padding-bottom: 20px
+    padding-top: 20px
+    text-align: center 
+    border: 1px solid #e8e8e8
+    color: #7c7c7c
+    font-size: 13px
+  &__button
+    width: 370px
+.bold_text
+  +bold

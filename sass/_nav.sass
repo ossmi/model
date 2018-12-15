@@ -12,13 +12,41 @@
     width: 67%
     justify-content: space-between
     align-items: center
-    +reg
-    font-size: 14px
-    text-decoration: underline
-
-    /* Исправить подчеркивание на непрерывающееся */
-    /* margin-top: 22px */
+    
+    &__item
+      border-bottom: 1px solid #aeaeae
+      text-decoration: none
+      display: inline-block
+      line-height: 0.95
+      color: #000000
+      +reg
+      font-size: 14px
+      &:hover
+        +bold
   &-phone
     margin-top: 12px
     display: flex
     flex-direction: column
+    align-items: flex-end
+    &__phone
+      color: #1f1f1f
+      +bold
+      font-size: 17px
+      text-decoration: none
+      margin-bottom: 7px
+    &__button
+      color: #22bac1
+      font-size: 14px
+      text-decoration: underline
+      +reg
+      border: none
+      background-color: #fff
+      padding: 0
+      border-bottom: 1px solid #22bac1
+      text-decoration: none
+      display: inline-block
+      line-height: 0.95
+      outline: none
+      &:hover
+        cursor: pointer
+        +bold
