@@ -1,6 +1,7 @@
 @media (max-width: 3000px)
   .hidden-l
     display: none
+
 @media (max-width: 1200px)
   .container
     width: 992px
@@ -8,4 +9,94 @@
 @media (max-width: 992px)
   .container
     width: 90%
+  .hidden-l
+    display: flex
+    color: #ffffff
+    font-size: 14px
+    +reg
+    &:before
+      content: url('../img/header/menu.png')
+      margin-right: 17px
+  .hidden-xs
+    display: none
+  .nav
+    background-color: transparent
+    &-phone
+      &__phone
+        color: #fff
+      &__button
+        background-color: transparent
+  .advantages
+    &__title
+      font-size: 36px
+      line-height: 50px 
+  .form
+    &__input
+      width: 200px
+    &__button
+      width: 200px
+      padding: 20px
+
+@media (max-width: 768px)
+  .container
+    width: 90%
+  .nav
+    &-phone
+      &__button
+        width: 175px
+  .main
+    padding-top: 50px
+    padding-bottom: 50px
+  .advantages
+    &__title
+      font-size: 34px
+      line-height: 40px
+    &__subtitle
+      font-size: 18px
+  .form
+    width: 440px
+    &__title
+      font-size: 16px
+    &__input
+      width: 180px
+    &__button
+      width: 180px
+      font-size: 13px
+
+  @media (max-width: 576px)
+    .main
+      
+      &-wrap
+        display: block
+        
+    .advantages
+      width: 300px
+      margin: auto
+      &__title  
+        font-size: 24px
+        margin-bottom: 20px
+      &__subtitle
+        margin-bottom: 30px
+    .form
+      margin: auto
+      margin-top: 30px
+      width: 280px
+      &__title
+        font-size: 16px
+      &__input
+        width: 180px
+      &__button
+        width: 180px
+    header
+      background: url('../img/main/main.png') no-repeat top
+      background-size: 1360px
+    .nav
+      &-phone
+        &__phone
+          font-size: 15px
+        &__button
+          font-size: 12px
+          width: 150px
+
+
   
