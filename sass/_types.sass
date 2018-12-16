@@ -1,0 +1,85 @@
+.types
+  padding: 101px 0 32px 0
+  &__title
+    color: #000000
+    font-size: 36px
+    text-align: center
+    display: block
+    position: relative
+    +reg
+    margin-bottom: 70px
+    &:after
+      content: ''
+      width: 31px
+      height: 2px
+      background-color: #23bac1
+      position: absolute
+      bottom: 0
+      margin-bottom: -25px
+      left: 50%
+      transform: translateX(-50%)
+  &__subtitle
+    margin: 0
+    font-size: 20px
+    margin-bottom: 79px
+    text-align: center
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+.card
+  min-width: 370px
+  margin: 10px
+  min-height: 680px
+  text-align: center
+  &:hover
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+  &-wrap
+    height: 224px
+    margin-bottom: 35px
+  &__title
+    margin-top: 33px
+    margin-bottom: 24px
+    font-size: 20px
+    +reg
+  &__img
+    margin-bottom: 35px
+  &__type
+    font-size: 16px   
+    line-height: 35px
+    width: 235px
+    margin: auto
+    position: relative
+    &:after
+      content: ''
+      width: 9px
+      height: 2px
+      background-color: #23bac1
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+    &-1
+      line-height: 21px
+    &-none
+      &:after
+        display: none
+
+  &__button
+    padding: 23px 28px
+    background-color: #fff
+    border: 1px solid rgba(174,174,174,0.2)
+    outline: none
+    text-transform: uppercase
+    font-size: 13px
+    +semi
+    color: #000000
+    &:hover
+      cursor: pointer
+      background-color: #23bac1
+      color: #ffffff
+      
+     
+
+
