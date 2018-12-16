@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
@@ -372,6 +373,135 @@
   cursor: pointer;
   background-color: #23bac1;
   color: #ffffff;
+}
+
+.projects {
+  background-color: #e8e8e8;
+  padding: 96px 0 99px 0;
+}
+
+.projects__title {
+  margin: 0;
+  color: #000000;
+  font-size: 36px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.projects__title:after {
+  content: '';
+  width: 31px;
+  height: 2px;
+  background-color: #23bac1;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.projects__subtitle {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 99px;
+  text-align: center;
+}
+
+.slide {
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slide__img {
+  width: 409px;
+  height: 340px;
+  margin-right: 0;
+}
+
+.slide__title {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  margin-bottom: 79px;
+}
+
+.slide__subtitle {
+  font-size: 16px;
+  margin-bottom: 86px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  position: relative;
+}
+
+.slide__subtitle:before {
+  content: 'Описание:';
+  position: absolute;
+  margin-top: -18px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.slide-parameter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 357px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 67px;
+}
+
+.slide-parameter__item {
+  font-size: 16px;
+}
+
+.slide-parameter__item:before {
+  content: 'Масштаб:';
+  position: absolute;
+  margin-top: -18px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.slide-parameter__item:nth-child(2):before {
+  content: 'Размер:';
+}
+
+.slide-parameter__item:nth-child(3):before {
+  content: 'Срок изготовления:';
+}
+
+.slide__button {
+  width: 216px;
+  background-color: #23bac1;
+  padding: 26px 49px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.slide__button:hover {
+  background-color: #3bd4dc;
+  cursor: pointer;
+}
+
+.slider_item {
+  background-color: #000;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  margin-top: 20px;
 }
 
 body {
