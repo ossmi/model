@@ -429,24 +429,31 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 340px;
+  margin: auto;
+}
+
+.slide__descr {
+  display: inline-block;
 }
 
 .slide__img {
   width: 409px;
   height: 340px;
   margin-right: 0;
+  display: inline-block;
 }
 
 .slide__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 23px;
   font-family: 'Proxima Nova Regular', sans-serif;
-  margin-bottom: 79px;
+  margin-bottom: 74px;
 }
 
 .slide__subtitle {
   font-size: 16px;
-  margin-bottom: 86px;
+  margin-bottom: 80px;
   font-family: 'Proxima Nova Regular', sans-serif;
   position: relative;
 }
@@ -454,7 +461,7 @@
 .slide__subtitle:before {
   content: 'Описание:';
   position: absolute;
-  margin-top: -18px;
+  margin-top: -24px;
   color: #7f7f7f;
   font-size: 12px;
 }
@@ -467,7 +474,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 67px;
+  margin-bottom: 63px;
 }
 
 .slide-parameter__item {
@@ -477,7 +484,7 @@
 .slide-parameter__item:before {
   content: 'Масштаб:';
   position: absolute;
-  margin-top: -18px;
+  margin-top: -24px;
   color: #7f7f7f;
   font-size: 12px;
 }
@@ -493,7 +500,7 @@
 .slide__button {
   width: 216px;
   background-color: #23bac1;
-  padding: 26px 49px;
+  padding: 23px 49px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   border: none;
   outline: none;
@@ -507,12 +514,60 @@
   cursor: pointer;
 }
 
-.slider_item {
-  background-color: #000;
-  width: 300px;
-  height: 300px;
-  border: 2px solid red;
-  margin-top: 20px;
+.slick-initialized, .slick-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.goal {
+  background: url("../img/main/main.png") no-repeat center;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 108px;
+}
+
+.goal__title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  line-height: 31px;
+  /* max-width: 675px */
+  text-align: center;
+  margin: 0;
+  margin-bottom: 90px;
+}
+
+.goal-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goal__item {
+  margin-bottom: 87px;
+}
+
+.goal__text {
+  width: 243px;
+  height: 53px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.goal__img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 34px;
 }
 
 body {
@@ -593,6 +648,18 @@ header {
   .types__subtitle {
     margin-bottom: 30px;
   }
+  .goal {
+    background: url("../img/main/main.png") no-repeat center;
+    height: 110%;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .goal__item {
+    margin-bottom: 40px;
+  }
+  .goal__img {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -649,6 +716,13 @@ header {
     margin-bottom: 25px;
     font-size: 18px;
   }
+  .goal__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .next {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -680,6 +754,17 @@ header {
   }
   .card__title {
     font-size: 18px;
+  }
+  .goal {
+    margin: auto;
+  }
+  .goal__title {
+    margin-bottom: 50px;
+  }
+  .goal-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
