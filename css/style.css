@@ -570,6 +570,70 @@
   margin-bottom: 34px;
 }
 
+.footer {
+  background-color: #191919;
+  background-position: center;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 146px;
+}
+
+.contacts__adress {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.contacts-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contacts-phone__phone {
+  color: #ffffff;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.contacts-phone__button {
+  color: #22bac1;
+  font-size: 14px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-bottom: 1px solid #22bac1;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 0.95;
+  outline: none;
+}
+
+.contacts-phone__button:hover {
+  cursor: pointer;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 16px;
+}
+
 body {
   font-family: 'Proxima Nova Light', sans-serif;
 }
@@ -579,6 +643,9 @@ body {
   margin: 0 auto;
 }
 
+/* .container-bcg
+  width: 1920px
+  margin: 0 auto */
 .next_line {
   display: block;
 }
@@ -765,6 +832,19 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contacts {
+    display: block;
+    text-align: center;
+  }
+  .contacts__adress {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contacts-phone {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
