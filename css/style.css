@@ -119,7 +119,7 @@
 
 .main {
   /* background: url('../img/main/main.png') no-repeat center */
-  padding-top: 114px;
+  padding-top: 118px;
   padding-bottom: 74px;
 }
 
@@ -138,7 +138,7 @@
 
 .advantages__title {
   margin: 0;
-  font-size: 44px;
+  font-size: 48px;
   line-height: 60px;
   margin-bottom: 35px;
   color: #fffafa;
@@ -147,7 +147,7 @@
 .advantages__subtitle {
   margin: 0;
   font-size: 20px;
-  margin-bottom: 66px;
+  margin-bottom: 57px;
   color: #fffafa;
 }
 
@@ -160,7 +160,7 @@
 .advantages-item__text {
   font-size: 15px;
   color: #fff;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   max-width: 206px;
 }
 
@@ -212,6 +212,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 13px;
 }
 
 .form__title {
@@ -225,8 +226,8 @@
 .form__input {
   width: 260px;
   margin-bottom: 15px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 17px;
+  padding-top: 17px;
   text-align: center;
   border: 1px solid #e8e8e8;
   color: #7c7c7c;
@@ -234,9 +235,10 @@
 }
 
 .form__button {
+  margin-top: 5px;
   width: 260px;
   background-color: #23bac1;
-  padding: 26px 57px;
+  padding: 22px 57px;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -328,6 +330,15 @@
 
 .card__img {
   margin-bottom: 35px;
+  width: 300px;
+  height: 220px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.card__img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .card__type {
@@ -592,44 +603,7 @@ header {
     width: 175px;
   }
   .main {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .advantages__title {
-    font-size: 34px;
-    line-height: 40px;
-  }
-  .advantages__subtitle {
-    font-size: 18px;
-  }
-  .form {
-    width: 440px;
-  }
-  .form__title {
-    font-size: 16px;
-  }
-  .form__input {
-    width: 180px;
-  }
-  .form__button {
-    width: 180px;
-    font-size: 13px;
-  }
-  .types {
-    padding: 50px 0 32px 0;
-  }
-  .types__title {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-  .types__subtitle {
-    margin-bottom: 25px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 576px) {
-  .main {
+    padding-top: 37px;
     padding-bottom: 20px;
   }
   .main-wrap {
@@ -664,6 +638,20 @@ header {
     background: url("../img/main/main.png") no-repeat top;
     background-size: 1360px;
   }
+  .types {
+    padding: 50px 0 32px 0;
+  }
+  .types__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .types__subtitle {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
   .nav-phone__phone {
     font-size: 15px;
   }
