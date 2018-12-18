@@ -430,18 +430,14 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 340px;
+  width: 902px;
   margin: auto;
-}
-
-.slide__descr {
-  display: inline-block;
 }
 
 .slide__img {
   width: 409px;
   height: 340px;
   margin-right: 0;
-  display: inline-block;
 }
 
 .slide__title {
@@ -466,14 +462,24 @@
   font-size: 12px;
 }
 
+.slide-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .slide-parameter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 357px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 88%;
   margin-bottom: 63px;
 }
 
@@ -518,8 +524,33 @@
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  outline: none;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow_right {
+  position: absolute;
+  right: -25px;
+  background: url("../img/projects/start_arrow.png") no-repeat center;
+  width: 14px;
+  height: 26px;
+  bottom: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow_left {
+  position: absolute;
+  left: -25px;
+  background: url("../img/projects/back-arrow.png") no-repeat center;
+  width: 14px;
+  height: 26px;
+  bottom: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .goal {
@@ -727,6 +758,56 @@ header {
   .goal__img {
     margin-bottom: 20px;
   }
+  .projects {
+    padding: 50px 0 50px 0;
+  }
+  .projects__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .projects__title:after {
+    margin-bottom: -25px;
+  }
+  .projects__subtitle {
+    margin-bottom: 50px;
+  }
+  .slide {
+    height: 300px;
+    width: 90%;
+    text-align: center;
+  }
+  .slide__title {
+    font-size: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .slide-align {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slide__img {
+    width: 350px;
+    height: 270px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .slide-parameter {
+    margin-bottom: 35px;
+    width: 70%;
+  }
+  .slide__button {
+    margin: auto;
+  }
+  .slick-initialized, .slick-slide {
+    display: block !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -845,6 +926,66 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .projects {
+    padding: 50px 0 50px 0;
+  }
+  .projects__title {
+    font-size: 26px;
+  }
+  .projects__subtitle {
+    font-size: 18px;
+  }
+  .slide {
+    width: 70%;
+  }
+  .slide__title {
+    font-size: 20px;
+  }
+  .slide__subtitle {
+    margin-bottom: 50px;
+  }
+  .slide__img {
+    width: 250px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .slide-parameter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 35px;
+    width: 60%;
+  }
+  .slide-parameter__item {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .slide-parameter__item:before {
+    content: 'Масштаб:';
+    position: absolute;
+    margin-top: -15px;
+  }
+  .slide-parameter__item:nth-child(2):before {
+    content: 'Размер:';
+  }
+  .slide-parameter__item:nth-child(3):before {
+    content: 'Срок изготовления:';
+  }
+  .arrow_right {
+    right: -10px;
+    bottom: 60%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  .arrow_left {
+    left: -10px;
+    bottom: 60%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
   }
 }
 /*# sourceMappingURL=style.css.map */

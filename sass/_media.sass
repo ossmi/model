@@ -52,6 +52,39 @@
       margin-bottom: 40px
     &__img
       margin-bottom: 20px
+  .projects
+    padding: 50px 0 50px 0
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
+      &:after
+        margin-bottom: -25px
+    &__subtitle
+      margin-bottom: 50px
+  .slide
+    height: 300px 
+    width: 90%
+    text-align: center
+    &__title
+      font-size: 22px
+      margin-bottom: 50px
+      text-align: center
+    &-align
+      justify-content: center
+      align-items: center
+    &__img
+      width: 350px
+      height: 270px
+      margin: auto
+      margin-bottom: 25px
+    &-parameter
+      margin-bottom: 35px
+      width: 70%
+    &__button
+      margin: auto
+  .slick-initialized, .slick-slide
+    display: block !important
+    justify-content: center
 
 @media (max-width: 768px)
   .container
@@ -139,6 +172,50 @@
       margin-bottom: 20px
     &-phone
       align-items: center
+  .projects
+    padding: 50px 0 50px 0
+    &__title
+      font-size: 26px
+    &__subtitle
+      font-size: 18px
+  .slide
+    width: 70%
+    &__title
+      font-size: 20px
+    &__subtitle
+      margin-bottom: 50px
+    &__img
+      width: 250px
+      height: 180px
+      margin: auto
+      margin-bottom: 25px
+    &-parameter
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 35px
+      width: 60%
+      &__item
+        font-size: 16px
+        margin-bottom: 30px
+        &:before
+          content: 'Масштаб:'
+          position: absolute
+          margin-top: -15px
+        &:nth-child(2):before
+          content: 'Размер:'
+        &:nth-child(3):before
+          content: 'Срок изготовления:'
+  .arrow
+    &_right
+      right: -10px
+      bottom: 60%
+      transform: translateY(-40%)
+    &_left
+      left: -10px
+      bottom: 60%
+      transform: translateY(-40%)
+  
+  
       
 
 

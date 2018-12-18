@@ -30,14 +30,12 @@
   display: flex
   justify-content: space-around
   height: 340px 
+  width: 902px
   margin: auto
-  &__descr
-    display: inline-block 
   &__img
     width: 409px
     height: 340px
     margin-right: 0
-    display: inline-block
   &__title
     margin: 0
     font-size: 23px
@@ -54,10 +52,13 @@
       margin-top: -24px
       color: #7f7f7f
       font-size: 12px
+  &-align
+    display: flex
+    flex-direction: column
   &-parameter
     display: flex
-    width: 357px
     justify-content: space-between
+    width: 88%
     margin-bottom: 63px
     &__item
       font-size: 16px
@@ -86,6 +87,25 @@
       cursor: pointer
 .slick-initialized, .slick-slide
   display: flex !important
-  justify-content: space-around
+  outline: none
+.arrow
+  &:hover
+    cursor: pointer
+  &_right
+    position: absolute
+    right: -25px
+    background: url('../img/projects/start_arrow.png') no-repeat center
+    width: 14px
+    height: 26px
+    bottom: 50%
+    transform: translateY(-50%)
+  &_left
+    position: absolute
+    left: -25px
+    background: url('../img/projects/back-arrow.png') no-repeat center
+    width: 14px
+    height: 26px
+    bottom: 50%
+    transform: translateY(-50%)
   
 

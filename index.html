@@ -245,6 +245,7 @@
             <div class="slide__descr">
               <h4 class="slide__title">Порт Артек</h4>
               <!-- /.slide__title -->
+              <div class="slide-align">
               <div class="slide__subtitle">Презентация порта Артек для первых лиц государства</div>
               <!-- /.slide__subtitle -->
               <div class="slide-parameter">
@@ -252,6 +253,7 @@
                 <div class="slide-parameter__item">1000х2000</div>
                 <div class="slide-parameter__item">40 дней</div>
               </div> <!-- slide-parameter -->
+              </div>
               <button class="slide__button">Заказать макет</button>
             </div>
             <!-- /.slide__descr -->
@@ -263,6 +265,7 @@
             <div class="slide__descr">
               <h4 class="slide__title">Жилой комплекс "Артемида"</h4>
               <!-- /.slide__title -->
+              <div class="slide-align">
               <div class="slide__subtitle">Презентация жилого комплекса нового поколения</div>
               <!-- /.slide__subtitle -->
               <div class="slide-parameter">
@@ -270,6 +273,7 @@
                 <div class="slide-parameter__item">1000х2000</div>
                 <div class="slide-parameter__item">40 дней</div>
               </div> <!-- slide-parameter -->
+              </div>
               <button class="slide__button">Заказать макет</button>
             </div>
               <!-- /.slide__descr -->
@@ -281,6 +285,7 @@
             <div class="slide__descr">
               <h4 class="slide__title">Квартал "Смольный"</h4>
               <!-- /.slide__title -->
+              <div class="slide-align">
               <div class="slide__subtitle">Презентация новго квартала для первых лиц государства</div>
               <!-- /.slide__subtitle -->
               <div class="slide-parameter">
@@ -288,6 +293,7 @@
                 <div class="slide-parameter__item">1000х2000</div>
                 <div class="slide-parameter__item">40 дней</div>
               </div> <!-- slide-parameter -->
+              </div>
               <button class="slide__button">Заказать макет</button>
             </div>
             <!-- /.slide__descr -->
@@ -392,6 +398,34 @@
   <script>
     $(document).ready(function(){
   $('.slide-wrap').slick({
+    nextArrow:'<div class="arrow arrow_right"></div>',
+    prevArrow:'<div class="arrow arrow_left"></div>',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   });
 });
   </script>
