@@ -1,7 +1,74 @@
 .menu
+  background-color: #e8e8e8
+  position: fixed
+  width: 100vw
+  height: 100vh
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  left: -100vw
+  transition: all 0.5s
+  &_active
+    left: 0
+  &-wrap
+    display: flex
+    align-items: center
+  &__span
+    color: #ffffff
+    font-size: 14px
+    +reg
+    margin-top: 16px
+  &__list
+    list-style: none
+    padding: 0
+    text-align: center
+  &__href
+    line-height: 4
+    letter-spacing: 4px
+    text-decoration: none
+    color: #000000
+    &:hover
+      display: block
+      width: 100vw
+      background-color: #000000
+      color: #fff
+    
   &-link
+    z-index: 9
     display: block
     width: 50px
     height: 50px
+    background-color: transparent
+    border-radius: 50%
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+    position: relative
+    margin-top: 12px
+    span, span:before, span:after
+      display: block
+      height: 2px
+      width: 18px
+      background-color: #fff
+      position: absolute
+      left: 50%
+      margin-left: -9px
+      top: 50%
+      margin-top: -1px
+    span:before
+      content: ''
+      transition: all 0.2s
+      margin-top: -6px
+    span:after
+      content: ''
+      transition: all 0.2s
+      margin-top: 4px
     &_active
-      height: 0
+      span
+        background-color: transparent
+        &:before
+          transform: rotate(135deg)
+          margin-top: 0
+        &:after
+          transform: rotate(-135deg)
+          margin-top: 0
+      

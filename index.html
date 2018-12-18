@@ -16,11 +16,38 @@
 <body>
 
 <header>
+
+    
+  
 <section class="nav">
   <div class="container">
+      
     <div class="nav-wrap">
+
+        <div class="menu-mob">
+            <div class= "menu-wrap">
+              <a class="menu-link" href="#menu">
+              <span></span>
+            </a>
+            <span class="menu__span">МЕНЮ</span>
+            </div>
+
+          <div class="menu">
+          <ul class="menu__list">
+            <li><a class="menu__href"  href="#main_sec">Главная</a></li>
+            <li><a class="menu__href" href="#model_types">Виды макетов</a></li>
+            <li><a class="menu__href" href="#complect">Комплектация макетов</a></li>
+            <li><a class="menu__href" href="#realize">Реализованные проекты</a></li>
+            <li><a class="menu__href" href="#our_clients">Наши клиенты</a></li>
+            <li><a class="menu__href" href="#contact_us">Контакты</a></li>
+          </ul>
+          </div>
+        </div> 
+
+
       <div class="nav-menu">
-        <span class="hidden-l">МЕНЮ</span>
+          
+        
         <a class="nav-menu__item hidden-xs" href="#">Главная</a>
         <a class="nav-menu__item hidden-xs" href="#">Виды макетов</a>
         <a class="nav-menu__item hidden-xs" href="#">Комплектация макетов</a>
@@ -36,14 +63,8 @@
   </div><!-- /.container -->
 </section>  
 
-<div class="menu">
-  <a class="menu-link menu-link_active" href="#">
-    <span></span>
-  </a>
-</div>
 
-
-<section class="main">
+<section class="main" id="main_sec">
   <div class="container">
     <div class="main-wrap">
       <div class="advantages">
@@ -86,7 +107,7 @@
 <!-- /.main -->
 </header>
 
-<section class="types">
+<section class="types" id="model_types" >
   <div class="container">
     <h2 class="types__title">Виды макетов</h2>
     <!-- /.types__title -->
@@ -234,7 +255,7 @@
 </section>
 <!-- /.types -->
 
-<section class="projects">
+<section class="projects" id="complect">
     <div class="container">
       <h2 class="projects__title">Реализованные проекты</h2>
       <!-- /.projects__title -->
@@ -305,7 +326,7 @@
 </section>
 <!-- /.projects -->
 
-<section class="goal">
+<section class="goal" id="realize">
   <div class="container">
     <h2 class="goal__title">Все макеты, изготовленные нашей макетной мастерской, <br class="next">
       помогли клиентам выполнить поставленные цели, а именно:</h2>
@@ -375,7 +396,7 @@
 </section>
 <!-- /.goal -->
 
-<section class="clients">
+<section class="clients" id="our_clients">
   <div class="container">
   <h2 class="clients__title">Наши клиенты</h2>
   <!-- /.clients__title -->
@@ -417,7 +438,7 @@
 <!-- /.clients -->
 
 <!-- <div class="container-bcg"> -->
-<footer class="footer">
+<footer class="footer" id="contact_us">
   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e9d598f225063788ea112b0e906e5c9cacfc02dee0624caeb0af1929a4fc05f&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script></div>
   <div class="container">
   <div class="contacts">
@@ -523,6 +544,21 @@
 });
 </script>
 
+<script>
+$(document).ready(function(){
+    $('.menu-link').on('click', function() {
+    $('.menu-link').toggleClass('menu-link_active');
+  });
+    $('.menu-link').on('click', function() {
+    $('.menu').toggleClass('menu_active')
+  });
+    $('.menu a').on('click', function() {
+    $('.menu-link').toggleClass('menu-link_active');
+    $('.menu').toggleClass('menu_active')
+  });
+
+});
+</script>
 
 
 </body>

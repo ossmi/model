@@ -1,5 +1,5 @@
 @media (max-width: 3000px)
-  .hidden-l
+  .menu-mob
     display: none
 
 @media (max-width: 1200px)
@@ -17,14 +17,8 @@
 @media (max-width: 992px)
   .container
     width: 90%
-  .hidden-l
+  .menu-mob
     display: flex
-    color: #ffffff
-    font-size: 14px
-    +reg
-    &:before
-      content: url('../img/header/menu.png')
-      margin-right: 17px
   .hidden-xs
     display: none
   .nav
@@ -166,6 +160,12 @@
       &__button
         font-size: 12px
         width: 150px
+  .advantages
+    &__title
+      line-height: 36px
+  header
+    background: url('../img/main/main.png') no-repeat top
+    background-size: 1280px
   .types
     padding: 10px 0 32px 0
     &__title
