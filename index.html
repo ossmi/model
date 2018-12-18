@@ -375,6 +375,47 @@
 </section>
 <!-- /.goal -->
 
+<section class="clients">
+  <div class="container">
+  <h2 class="clients__title">Наши клиенты</h2>
+  <!-- /.clients__title -->
+  <div class="clients__slider">
+    <div class="clients__item">
+      <img src="img/clients/img-1.png" alt="Наш клиент" class="clients__img"></div>
+    <!-- /.clients__item -->
+    <div class="clients__item">
+      <img src="img/clients/img-2.png" alt="Наш клиент" class="clients__img"></div>
+    <!-- /.clients__item -->
+    <div class="clients__item">
+      <img src="img/clients/img-3.png" alt="Наш клиент" class="clients__img"></div>
+    <!-- /.clients__item -->
+    <div class="clients__item">
+      <img src="img/clients/img-4.png" alt="Наш клиент" class="clients__img"></div>
+    <!-- /.clients__item -->
+    <div class="clients__item">
+      <img src="img/clients/img-5.png" alt="Наш клиент" class="clients__img"></div>
+    <!-- /.clients__item -->
+    <div class="clients__item">
+        <img src="img/clients/img-1.png" alt="Наш клиент" class="clients__img"></div>
+      <!-- /.clients__item -->
+      <div class="clients__item">
+        <img src="img/clients/img-2.png" alt="Наш клиент" class="clients__img"></div>
+      <!-- /.clients__item -->
+      <div class="clients__item">
+        <img src="img/clients/img-3.png" alt="Наш клиент" class="clients__img"></div>
+      <!-- /.clients__item -->
+      <div class="clients__item">
+        <img src="img/clients/img-4.png" alt="Наш клиент" class="clients__img"></div>
+      <!-- /.clients__item -->
+      <div class="clients__item">
+        <img src="img/clients/img-5.png" alt="Наш клиент" class="clients__img"></div>
+      <!-- /.clients__item -->
+  </div>
+  <!-- /.clients__slider -->
+</div> <!-- .container -->
+</section>
+<!-- /.clients -->
+
 <!-- <div class="container-bcg"> -->
 <footer class="footer">
   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e9d598f225063788ea112b0e906e5c9cacfc02dee0624caeb0af1929a4fc05f&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script></div>
@@ -405,7 +446,7 @@
       breakpoint: 1200,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 1
       }
     },
     {
@@ -429,6 +470,60 @@
   });
 });
   </script>
+
+<script>
+    $(document).ready(function(){
+  $('.clients__slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    nextArrow:'<div class="arrow arrow_right-1"></div>',
+    prevArrow:'<div class="arrow arrow_left-1"></div>',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1070,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+});
+</script>
+
+
 
 </body>
 </html>
