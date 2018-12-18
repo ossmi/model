@@ -1,0 +1,82 @@
+.modal  
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.42)
+  left: 0
+  top: 0
+  z-index: 99
+  display: flex
+  &_hidden
+    display: none
+  &_visible
+    display: flex
+  &__dialog
+    width: 900px  
+    height: 500px
+    background-color: #e8e8e8
+    margin: auto
+    position: relative
+    overflow: auto
+  &__close
+    position: absolute
+    top: 15px
+    right: 15px
+    &:hover
+      cursor: pointer
+  &-wrap
+    display: flex
+    align-items: center
+    margin: auto
+    justify-content: space-around
+    padding: 40px
+  &__title
+    +bold
+    font-size: 24px
+  &__ul
+    padding-left: 20px
+  &__li
+    margin-bottom: 15px
+.form1
+  border: 1px solid #ffffff
+  background-color: #ffffff
+  width: 350px
+  height: 420px 
+  text-align: center 
+  margin: 0
+  display: flex
+  flex-direction: column
+  &__title
+    color: #000000
+    font-size: 18px
+    margin: 0
+    margin-top: 40px
+    margin-bottom: 28px
+  &__input
+    width: 260px
+    margin-bottom: 15px
+    padding-bottom: 17px
+    padding-top: 17px
+    text-align: center 
+    border: 1px solid #e8e8e8
+    color: #7c7c7c
+    font-size: 13px
+    outline: none
+  &__button
+    margin-top: 5px
+    width: 260px
+    background-color: #23bac1
+    padding: 22px 57px
+    border: none
+    outline: none
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 15px
+    +reg
+    &:hover
+      background-color: lighten(#23bac1, 10%)
+      cursor: pointer
+.bold_text
+  +bold
+
+    

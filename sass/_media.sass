@@ -101,9 +101,15 @@
       right: -20px
     &_left-1
       left: -20px
+  .form1
+    width: 300px
+    &__input
+      width: 200px
+  .modal 
+    &__dialog
+      width: 90%
     
-      
-
+    
 @media (max-width: 768px)
   .container
     width: 90%
@@ -151,6 +157,17 @@
       line-height: 25px
   .next
     display: none
+  .modal 
+    &-wrap
+      display: block
+    &__dialog
+      width: 80%
+      height: 100%
+    &__list
+      margin: auto
+  .form1
+    margin: auto
+    margin-top: 30px
 
 @media (max-width: 576px)
   .nav
@@ -238,6 +255,25 @@
       left: -10px
       bottom: 60%
       transform: translateY(-40%)
+  .modal 
+    &-wrap
+      padding: 40px 5px
+    &__dialog
+      width: 90%
+    &__title
+      +reg
+      font-size: 18px
+      text-align: center
+  br
+    display: none
+    &__list
+      margin: auto
+  .form1
+    width: 250px
+    margin: auto
+    margin-top: 30px
+    &__title
+      font-size: 16px
   
   
       
